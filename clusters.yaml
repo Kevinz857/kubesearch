@@ -1,0 +1,117 @@
+apiVersion: v1
+clusters:
+- cluster:
+    insecure-skip-tls-verify: true
+    server: https://10.10.102.13:9443
+  name: cluster-52fd68mb7c
+- cluster:
+    insecure-skip-tls-verify: true
+    server: https://10.10.104.20:6443
+  name: cluster-64g9kh8824
+- cluster:
+    insecure-skip-tls-verify: true
+    server: https://10.10.121.11:6443
+  name: cluster-6d8ck88bt8
+- cluster:
+    insecure-skip-tls-verify: true
+    server: https://10.10.101.161:6443
+  name: cluster-877bf24kbb
+- cluster:
+    insecure-skip-tls-verify: true
+    server: https://10.10.115.20:6443
+  name: cluster-8h55h252f6
+- cluster:
+    insecure-skip-tls-verify: true
+    server: https://10.10.115.20:7443
+  name: cluster-b7bm5fh6tt
+- cluster:
+    insecure-skip-tls-verify: true
+    server: https://10.10.101.13:7443
+  name: cluster-db8fmbkbtm
+- cluster:
+    insecure-skip-tls-verify: true
+    server: https://10.10.104.21:8443
+  name: cluster-dmmbt8dfkk
+- cluster:
+    insecure-skip-tls-verify: true
+    server: https://10.10.115.20:8443
+  name: cluster-k2f67f46c5
+- cluster:
+    insecure-skip-tls-verify: true
+    server: https://10.10.72.21:6443
+  name: cluster-tb74f2df7c
+contexts:
+- context:
+    cluster: cluster-6d8ck88bt8
+    user: user-6d8ck88bt8
+  name: cluster-a
+- context:
+    cluster: cluster-877bf24kbb
+    user: user-877bf24kbb
+  name: cluster-b
+- context:
+    cluster: cluster-52fd68mb7c
+    user: user-52fd68mb7c
+  name: cluster-c
+- context:
+    cluster: cluster-8h55h252f6
+    user: user-8h55h252f6
+  name: cluster-d
+- context:
+    cluster: cluster-64g9kh8824
+    user: user-64g9kh8824
+  name: cluster-e
+- context:
+    cluster: cluster-tb74f2df7c
+    user: user-tb74f2df7c
+  name: cluster-f
+- context:
+    cluster: cluster-k2f67f46c5
+    user: user-k2f67f46c5
+  name: cluster-g
+- context:
+    cluster: cluster-dmmbt8dfkk
+    user: user-dmmbt8dfkk
+  name: cluster-g
+- context:
+    cluster: cluster-b7bm5fh6tt
+    user: user-b7bm5fh6tt
+  name: cluster-h
+- context:
+    cluster: cluster-db8fmbkbtm
+    user: user-db8fmbkbtm
+  name: cluster-h
+current-context: cluster-h
+kind: Config
+preferences: {}
+users:
+- name: user-52fd68mb7c
+  user:
+    token: b22f6e9a183besdllq0c98a202e6e32e
+- name: user-64g9kh8824
+  user:
+    token: Qb013c5a4ace0asdklqnncrLtYefbf8M
+- name: user-6d8ck88bt8
+  user:
+    token: t0ap6h3vak1xqlkewjcqf9mdawkalice
+- name: user-877bf24kbb
+  user:
+    token: t0ap6h3vakasjkecxeo0c9mbz2f83ben
+- name: user-8h55h252f6
+  user:
+    token: 6e90fdealkweqk13c5a4ace4388awasd
+- name: user-b7bm5fh6tt
+  user:
+    token: akpo0klckelxny6h32e10c9mbz2f83be
+- name: user-db8fmbkbtm
+  user:
+    token: 9203be8e6a128aa6e8ae3sadkllb282f
+- name: user-dmmbt8dfkk
+  user:
+    token: crzp6h3vak1xeqwlleo0c9mbz2f83crz
+- name: user-k2f67f46c5
+  user:
+    token: QTsrLqwklbf8b013c5a4ace0mjUnaxyb
+- name: user-tb74f2df7c
+  user:
+    token: 6927e99aa9692d309saklq0ad2103d16
